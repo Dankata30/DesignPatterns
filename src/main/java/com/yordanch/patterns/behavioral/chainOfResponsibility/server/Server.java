@@ -9,6 +9,15 @@ public class Server {
     private Map<String, String> users = new HashMap<>();
     private Middleware middleware;
 
+    private boolean test = false;
+
+    public boolean isTest() {
+        return test;
+    }
+
+    public void setTest(boolean test) {
+        this.test = test;
+    }
 
     public void setMiddleware(Middleware middleware) {
         this.middleware = middleware;
